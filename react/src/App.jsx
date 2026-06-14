@@ -1,14 +1,27 @@
  
 import './App.css'
-
+import Todo from './Todo.jsx'
 
 function App() {
   
-
+const time= 50;
   return (
     <>
     
           <h1>Get started</h1>
+          <Todo
+           task="learn react" 
+           isDone={true} 
+           somoy={time}></Todo>
+
+          <Todo 
+          task="Revise 
+          JavaScript" 
+          isDone={false} ></Todo>
+          <Todo 
+          task="finish project" 
+          isDone={false} 
+          somoy="69009"></Todo>
          <Person></Person>
          {/* <Person></Person> */}
          <Car></Car>
