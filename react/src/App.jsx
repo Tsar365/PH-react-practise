@@ -19,8 +19,20 @@ function App() {
          <Counter name="React" tech="JavaScript" ></Counter>
          <Counter name="Java" tech="Spring" ></Counter>
          <Counter></Counter>
+         <Player nm="John" rns="100"></Player>
+         <Player nm="ehsan" rns="500"></Player>
      
     </>
+  )
+}
+
+function Player({nm, rns, goals = 50}) {
+  return (
+    <div className="student">
+      <h3>Name:{nm}</h3>
+      <h3>Runs:{rns}</h3>
+      <h3>Goals:{goals}</h3>
+    </div>
   )
 }
 
