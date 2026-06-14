@@ -182,3 +182,11 @@
     border-right-color: var(--border);
   }
 }
+
+
+.student{
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid var(--accent);
+  border-radius: 5px;
+}
