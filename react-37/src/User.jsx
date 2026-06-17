@@ -1,7 +1,13 @@
-export default function User(){
-  return (
+import { use } from 'react';
+
+export default function User({ fetchsss }) {
+	const users = use(fetchsss);
+
+	console.log(users);
+
+	return (
 		<div className="card">
-			<h3>Users: </h3>
+			<h3>Users: {users.length}</h3>
 		</div>
 	);
 }
