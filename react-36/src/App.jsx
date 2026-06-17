@@ -4,6 +4,7 @@ import Todo from './Todo.jsx'
 import Actor from './Actor.jsx'
 import Singer from './Singer.jsx'
 
+
 function App() {
   const actors=["Akshay Kumar", "Shahrukh Khan", "Salman Khan", "Ranveer Singh", "Ranbir Kapoor"];
 
@@ -14,13 +15,15 @@ function App() {
   ];
   const time= 50;
 
+  
+
   return (
     <>
 
 
+
+
     <h1>Lest's start with Bollywood</h1>
-
-
 
     {
       singers.map(sir => <Singer key={sir.id} singsss={sir}></Singer>)
