@@ -1,5 +1,5 @@
 import './App.css';
-// import Counter from './Countyer';
+import Counter from './Counter';
 
 function App() {
 
@@ -21,7 +21,7 @@ const hanleAdds=(num)=>{
 			<h1>Get started</h1>
 
       <h1>Counter component added</h1>
-      {/* <Counter></Counter> */}
+      <Counter></Counter>
 			{/* <button onClick="handClick()">Click me</button> */}
 			<button onClick={handClick}>Click me</button>
 			<button
