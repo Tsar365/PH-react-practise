@@ -2,41 +2,43 @@
 import './country.css'
 import { useState } from 'react';
 
-const Country = ({contry}) => {
-  // console.log(contry.name.common)
-  const [visited, setVisited] = useState(false);
+const Country = ({ contry, handleVisitedCountriessss }) => {
+	// console.log(contry.name.common)
+	const [visited, setVisited] = useState(false);
+  // console.log(handleVisitedCountriessss)
 
-const handleVisited=()=>{
-  // console.log("button clicked");
-  // basic system:
-  // setVisited(true)
-  // if (visited){
-  //   setVisited(false)
-  // } else{
-  //   setVisited(true)
+	const handleVisited = () => {
+		// console.log("button clicked");
+		// basic system:
+		// setVisited(true)
+		// if (visited){
+		//   setVisited(false)
+		// } else{
+		//   setVisited(true)
 
-  // second system 
-  // setVisited(visited? false:true);
+		// second system
+		// setVisited(visited? false:true);
 
-  // third system 
-  setVisited(!visited)
-  }
+		// third system
+		setVisited(!visited);
+    handleVisitedCountriessss(contry);
+	};
 
-
-  return (
+	return (
 		// <div className={`country  ${visited? `country-visited`:`country-not-visited`}`}>
-		<div className={`country  ${visited &&`country-visited`}`}>
-      <img src={contry.flags.flags.png} alt={contry.flags.flags.alt}></img>
+		<div className={`country  ${visited && `country-visited`}`}>
+			<img
+				src={contry.flags.flags.png}
+				alt={contry.flags.flags.alt}></img>
 			<h3>Name: {contry.name.common}</h3>
-      <p>Population:{contry.population.population}</p>
-      <p>Area: {contry.area.area} 
-        {
-          contry.area.area>300000?"   Big countryt":"    small country"
-        }
-        </p>
-        <button onClick={handleVisited}>
-          {visited? "visited" : "Not Visited"}
-          </button>
+			<p>Population:{contry.population.population}</p>
+			<p>
+				Area: {contry.area.area}
+				{contry.area.area > 300000 ? '   Big countryt' : '    small country'}
+			</p>
+			<button onClick={handleVisited}>
+				{visited ? 'visited' : 'Not Visited'}
+			</button>
 		</div>
 	);
 };
