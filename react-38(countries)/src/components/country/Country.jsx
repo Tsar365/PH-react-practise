@@ -2,10 +2,10 @@
 import './country.css'
 import { useState } from 'react';
 
-const Country = ({ contry, handleVisitedCountriessss }) => {
+const Country = ({ contry, handleVisitedCountriessss, handlevisitedflagsss }) => {
 	// console.log(contry.name.common)
 	const [visited, setVisited] = useState(false);
-  // console.log(handleVisitedCountriessss)
+	// console.log(handleVisitedCountriessss)
 
 	const handleVisited = () => {
 		// console.log("button clicked");
@@ -21,7 +21,7 @@ const Country = ({ contry, handleVisitedCountriessss }) => {
 
 		// third system
 		setVisited(!visited);
-    handleVisitedCountriessss(contry);
+		handleVisitedCountriessss(contry);
 	};
 
 	return (
@@ -38,6 +38,9 @@ const Country = ({ contry, handleVisitedCountriessss }) => {
 			</p>
 			<button onClick={handleVisited}>
 				{visited ? 'visited' : 'Not Visited'}
+			</button>
+			<button onClick={()=>{handlevisitedflagsss(contry.flags.flags.png)}}>
+				Add Visited flag
 			</button>
 		</div>
 	);
