@@ -2,6 +2,7 @@
 
 import { use } from "react";
 import Country from "../country/Country";
+import './countries.css';
 
 const Countries = ({countriesPromisesss}) => {
   const countriesData=use(countriesPromisesss);
@@ -13,13 +14,17 @@ const Countries = ({countriesPromisesss}) => {
   // console.log("messege",msj)
   // console.log("sta",status)
   return (
-    <div>
-      <h1>In the countries:{countries.length}</h1>
-      {
-        countries.map(countryyy=><Country contry={countryyy} key={countryyy.cca3.cca3}></Country>)
-      }
-    </div>
-  );
+		<div>
+			<h1>In the countries:{countries.length}</h1>
+			<div className="countries">
+				{countries.map((countryyy) => (
+					<Country
+						contry={countryyy}
+						key={countryyy.cca3.cca3}></Country>
+				))}
+			</div>
+		</div>
+	);
 };
 
 export default Countries;
