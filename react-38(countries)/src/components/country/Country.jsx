@@ -1,15 +1,31 @@
 // import React from 'react';
 import './country.css'
+import { useState } from 'react';
 
 const Country = ({contry}) => {
   // console.log(contry.name.common)
+  const [visited, setVisited] = useState(false);
 
 const handleVisited=()=>{
-  console.log("button clicked");
-}
+  // console.log("button clicked");
+  // basic system:
+  // setVisited(true)
+  // if (visited){
+  //   setVisited(false)
+  // } else{
+  //   setVisited(true)
+
+  // second system 
+  // setVisited(visited? false:true);
+
+  // third system 
+  setVisited(!visited)
+  }
+
 
   return (
-		<div className="country">
+		// <div className={`country  ${visited? `country-visited`:`country-not-visited`}`}>
+		<div className={`country  ${visited &&`country-visited`}`}>
       <img src={contry.flags.flags.png} alt={contry.flags.flags.alt}></img>
 			<h3>Name: {contry.name.common}</h3>
       <p>Population:{contry.population.population}</p>
@@ -18,7 +34,9 @@ const handleVisited=()=>{
           contry.area.area>300000?"   Big countryt":"    small country"
         }
         </p>
-        <button onClick={handleVisited}>Not Visitred</button>
+        <button onClick={handleVisited}>
+          {visited? "visited" : "Not Visited"}
+          </button>
 		</div>
 	);
 };
