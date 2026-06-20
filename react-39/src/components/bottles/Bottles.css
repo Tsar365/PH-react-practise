@@ -1,0 +1,9 @@
+.bottles-cont{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 20px;
+}
+.bottle img{
+  width: 250px;
+  height: 300px;
+}
