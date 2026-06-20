@@ -9,11 +9,14 @@ const Bottles = ({ bottlePromise }) => {
 
   const handleAddCart=(e)=>{ //each bottle er infotmation e te thakbe
     console.log("bottle will added to cart",e);
+    const newCart=[...cart,e]
+    setCart(newCart);
   }
 	// console.log(bottles)
   return (
 		<div>
 			<h1>Bottles: {bottles.length}</h1>
+      <p>Added to cart: {cart.length}</p>
 			<div className="bottles-cont">
 				{bottles.map((bottle) => (
 					<Bottle
