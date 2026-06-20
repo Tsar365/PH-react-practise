@@ -2,26 +2,31 @@
 	{
 		"id": 1,
 		"brand": "Aquafina",
-		"capacity": "500ml"
+		"capacity": "500ml",
+		"image": "https://images.unsplash.com/photo-1564419320461-6870880221ad?w=300"
 	},
 	{
 		"id": 2,
 		"brand": "Kinley",
-		"capacity": "1L"
+		"capacity": "1L",
+		"image": "https://images.unsplash.com/photo-1559839914-17aae19cec71?w=300"
 	},
 	{
 		"id": 3,
 		"brand": "Dasani",
-		"capacity": "750ml"
+		"capacity": "750ml",
+		"image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=300"
 	},
 	{
 		"id": 4,
 		"brand": "Mum",
-		"capacity": "500ml"
+		"capacity": "500ml",
+		"image": "https://images.unsplash.com/photo-1616118132534-381148898bb4?w=300"
 	},
 	{
 		"id": 5,
 		"brand": "Fresh",
-		"capacity": "1.5L"
+		"capacity": "1.5L",
+		"image": "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=300"
 	}
 ]

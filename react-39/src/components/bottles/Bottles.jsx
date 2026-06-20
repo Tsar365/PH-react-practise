@@ -1,0 +1,21 @@
+import {use} from 'react';
+import Bottle from '../bottle/Bottle';
+
+const Bottles = ({ bottlePromise }) => {
+
+	const bottles = use(bottlePromise);
+	// console.log(bottles)
+  return (
+    <div>
+      <h1>Bottles: {bottles.length}</h1>
+      {
+        bottles.map(bottle=><Bottle key={bottle.id} bottle={bottle}></Bottle>)
+      }
+    </div>
+  );
+};
+
+export default Bottles;
+
+
+
