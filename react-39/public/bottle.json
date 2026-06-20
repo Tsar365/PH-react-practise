@@ -1,0 +1,27 @@
+[
+	{
+		"id": 1,
+		"brand": "Aquafina",
+		"capacity": "500ml"
+	},
+	{
+		"id": 2,
+		"brand": "Kinley",
+		"capacity": "1L"
+	},
+	{
+		"id": 3,
+		"brand": "Dasani",
+		"capacity": "750ml"
+	},
+	{
+		"id": 4,
+		"brand": "Mum",
+		"capacity": "500ml"
+	},
+	{
+		"id": 5,
+		"brand": "Fresh",
+		"capacity": "1.5L"
+	}
+]
